@@ -13,13 +13,13 @@ automatically calculated based on its points.
 
 Examples:
 
-![demo1.json](../demo/crazy_tachki.gif)
+![demo1.json](./demo/crazy_tachki.gif)
 
-![demo2.json](../demo/fish_confuz.gif)
+![demo2.json](./demo/fish_confuz.gif)
 
 Scenario example:
 
-![json_example.png](../demo/json_example.png)
+![json_example.png](./demo/json_example.png)
 
 ## Build
 
