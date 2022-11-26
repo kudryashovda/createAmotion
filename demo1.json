@@ -1,0 +1,107 @@
+{
+  "frame_settings": {
+    "height": 500,
+    "width": 800,
+    "width_m": 80
+  },
+  "static_objects": [
+    {
+      "name": "sl1",
+      "type": "solid_line",
+      "start_pos": [0,0],
+      "end_pos": [0,500],
+      "thickness": 1
+    },
+    {
+      "name": "sl2",
+      "type": "solid_line",
+      "start_pos": [799,0],
+      "end_pos": [799,500],
+      "thickness": 1
+    },
+    {
+      "name": "sl_center1",
+      "type": "solid_line",
+      "start_pos": [395,0],
+      "end_pos": [395,500],
+      "thickness": 2
+    },
+    {
+      "name": "sl_center2",
+      "type": "solid_line",
+      "start_pos": [405,0],
+      "end_pos": [405,500],
+      "thickness": 2
+    },
+    {
+      "name": "dl_left",
+      "type": "dashed_line",
+      "start_pos": [200,10],
+      "end_pos": [200,500],
+      "period" : 80,
+      "duty_cycle": 0.8,
+      "thickness": 5
+    },
+    {
+      "name": "dl_right",
+      "type": "dashed_line",
+      "start_pos": [600,10],
+      "end_pos": [600,500],
+      "period" : 80,
+      "duty_cycle": 0.8,
+      "thickness": 5
+    },
+    {
+      "name": "c1",
+      "type": "circle",
+      "pos": [20,20],
+      "radius": 5,
+      "thickness": 1
+    }
+  ],
+  "movable_objects": [
+    {
+      "name": "o1",
+      "time_start_ms": 0,
+      "route": [
+        [5,5,5,30,30],
+        [5,30,5,60,70]
+      ],
+      "type" : "rectangle",
+      "width": 3,
+      "height" : 2
+    },
+    {
+      "name": "o2",
+      "time_start_ms": 0,
+      "route": [
+        [15,5,15,25,50],
+        [15,25,25,25,20],
+        [25,25,25,-10,70]
+      ],
+      "type" : "circle",
+      "width": 3,
+      "height" : 2
+    },
+    {
+      "name": "o3",
+      "time_start_ms": 0,
+      "route": [
+        [50,45,50,30,60],
+        [50,30,30,20,80],
+        [30,20,30,60,100]
+
+      ]
+    },
+    {
+      "name": "o4",
+      "time_start_ms": 0,
+      "route": [
+        [65,45,65,25,30],
+        [65,25,65,10,80],
+        [65,10,65,-10,100]
+
+      ]
+    }
+  ]
+}

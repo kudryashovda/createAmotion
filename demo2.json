@@ -1,0 +1,121 @@
+{
+  "frame_settings": {
+    "height": 500,
+    "width": 800,
+    "width_m": 80
+  },
+  "movable_objects": [
+    {
+      "name": "",
+      "time_start_ms": 0,
+      "route": [
+        [5,5,20,5,30],
+        [20,5,30,10,30],
+        [30,10,50,10,30],
+        [50,10,60,5,30],
+        [60,5,81,5,30]
+      ],
+      "type" : "circle",
+      "width": 10,
+      "height" : 3
+    },
+    {
+      "name": "",
+      "time_start_ms": 0,
+      "route": [
+        [8,5,23,5,30],
+        [23,5,33,10,30],
+        [33,10,53,10,30],
+        [53,10,63,5,30],
+        [63,5,84,5,30]
+      ],
+      "type" : "circle",
+      "width": 1,
+      "height" : 1
+    },
+    {
+      "name": "",
+      "time_start_ms": 0,
+      "route": [
+        [0,5,15,5,30],
+        [15,5,25,10,30],
+        [25,10,45,10,30],
+        [45,10,55,5,30],
+        [55,5,76,5,30]
+      ],
+      "type" : "circle",
+      "width": 1,
+      "height" : 5
+    },
+    {
+      "name": "",
+      "time_start_ms": 0,
+      "route": [
+        [81,30,5,30,30]
+      ],
+      "type" : "circle",
+      "width": 10,
+      "height" : 3
+    },
+    {
+      "name": "",
+      "time_start_ms": 0,
+      "route": [
+        [78,30,8,30,30]
+      ],
+      "type" : "circle",
+      "width": 1,
+      "height" : 1
+    },
+    {
+      "name": "",
+      "time_start_ms": 0,
+      "route": [
+        [86,30,0,30,30]
+      ],
+      "type" : "circle",
+      "width": 1,
+      "height" : 5
+    },
+    {
+      "name": "",
+      "time_start_ms": 0,
+      "route": [
+        [5,50,5,-10,70]
+      ],
+      "type" : "circle",
+      "width": 1,
+      "height" : 1
+    },
+    {
+      "name": "",
+      "time_start_ms": 100,
+      "route": [
+        [7,50,7,-10,90]
+      ],
+      "type" : "circle",
+      "width": 1,
+      "height" : 1
+    },
+    {
+      "name": "",
+      "time_start_ms": 1000,
+      "route": [
+        [65,50,65,-10,70]
+      ],
+      "type" : "circle",
+      "width": 1,
+      "height" : 1
+    },
+    {
+      "name": "",
+      "time_start_ms": 1100,
+      "route": [
+        [67,50,67,-10,90]
+      ],
+      "type" : "circle",
+      "width": 1,
+      "height" : 1
+    }
+  ]
+}
