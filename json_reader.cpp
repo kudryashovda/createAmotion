@@ -81,7 +81,7 @@ ParsedInput ParseJson(const json::Document &document)
 			const auto &json_object_dict = json_object.AsDict();
 			MovableObject movable_object;
 			movable_object.obj_name = GetDictValueByNameAsString(
-					json_object_dict, "name", "undefined");
+					json_object_dict, "name", "");
 			movable_object.type = GetDictValueByNameAsString(
 					json_object_dict, "type", "rectangle");
 			movable_object.width_m = GetDictValueByNameAsDouble(
@@ -122,7 +122,7 @@ ParsedInput ParseJson(const json::Document &document)
 			if (object_type == "solid_line" || object_type == "dashed_line") {
 				Line line;
 				line.name = GetDictValueByNameAsString(
-						json_object_dict, "name", "undefined");
+						json_object_dict, "name", "");
 				line.type = object_type;
 				line.start_pos = GetDictValueByNameAsPoint(
 						json_object_dict, "start_pos", Point{ 0, 0 });
@@ -138,7 +138,7 @@ ParsedInput ParseJson(const json::Document &document)
 			} else if (object_type == "circle") {
 				Circle circle;
 				circle.name = GetDictValueByNameAsString(
-						json_object_dict, "name", "undefined");
+						json_object_dict, "name", "");
 				circle.pos = GetDictValueByNameAsPoint(
 						json_object_dict, "pos", Point{ 0, 0 });
 				circle.radius =
