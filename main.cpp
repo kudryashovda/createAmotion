@@ -25,8 +25,9 @@ int main(int argc, char *argv[])
 	const int frame_width = parsed_input.frame_settings.width;
 	const int frame_width_m = parsed_input.frame_settings.width_m;
 	const int frame_height = parsed_input.frame_settings.height;
+	const int frame_height_m = parsed_input.frame_settings.height_m;
 
-	Render render(frame_height, frame_width, frame_width_m);
+	Render render(frame_height, frame_height_m, frame_width, frame_width_m);
 
 	if (!render.initWriter(output_file)) {
 		exit(1);

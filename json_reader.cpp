@@ -71,7 +71,9 @@ ParsedInput ParseJson(const json::Document &document)
 		parsed.frame_settings.height =
 				GetDictValueByNameAsInt(json_frame_settings, "height", 0);
 		parsed.frame_settings.width_m =
-				GetDictValueByNameAsInt(json_frame_settings, "width_m", 0);
+				GetDictValueByNameAsInt(json_frame_settings, "width_m", 1);
+		parsed.frame_settings.height_m =
+				GetDictValueByNameAsInt(json_frame_settings, "height_m", 1);
 	}
 
 	if (const auto json_objects_iter = root.find("movable_objects"s);

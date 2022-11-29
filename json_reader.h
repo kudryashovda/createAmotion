@@ -12,6 +12,7 @@ struct FrameSettings
 	int width{};
 	int height{};
 	int width_m{};
+	int height_m{};
 };
 
 struct ParsedInput

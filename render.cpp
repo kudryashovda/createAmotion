@@ -10,8 +10,8 @@ void Render::drawMovableObject(
 		const MovableObject &object, int msec, const cv::Scalar &color)
 {
 	const auto [x_m, y_m] = object.getObjPosAtTimeInMeters(msec);
-	const int x = static_cast<int>(x_m * pixel_per_meter_);
-	const int y = static_cast<int>(y_m * pixel_per_meter_);
+	const int x = static_cast<int>(x_m * hor_pixel_per_meter_);
+	const int y = static_cast<int>(y_m * ver_pixel_per_meter_);
 
 	const bool is_inside_frame = x <= img_.cols && y <= img_.rows && x >= 0
 			&& y >= 0 && msec >= object.time_start_ms;
@@ -20,9 +20,9 @@ void Render::drawMovableObject(
 		return;
 	}
 	const int object_width =
-			static_cast<int>(object.width_m * pixel_per_meter_);
+			static_cast<int>(object.width_m * hor_pixel_per_meter_);
 	const int object_height =
-			static_cast<int>(object.height_m * pixel_per_meter_);
+			static_cast<int>(object.height_m * ver_pixel_per_meter_);
 
 	constexpr int thickness = 1;
 	if (object.type == "rectangle") {
